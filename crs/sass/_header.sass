@@ -1,0 +1,40 @@
+.header
+  &-logo
+    background: url(../img/header-logo.png) center no-repeat
+    background-size: 100% // фон 100% от родителя
+    height: 61px //размер родителя
+    width: 191px //размер родителя
+    padding: 15px 0
+  &-contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &__phone
+      border-right: 13px
+      &1
+        padding-left: 13px
+      &s
+        display: flex
+        font-size: 22px
+        margin-right: 13px
+      &:first-child // палочка разделитель номеров 
+        border-right: 1px solid #cfcfd0
+        padding-right: 13px
+
+
+@keyframes move
+  from //откуда, от чего
+    opacity: 0 //изначально скрыт
+    margin-bottom: -100px
+      
+  to //куда, до чего. а м/у могут быть проценты
+    opacity: 1
+    margin-bottom: 0
+
+
+
+
+
+.animate
+  animation-name: move
+  animation-duration: 1s 
